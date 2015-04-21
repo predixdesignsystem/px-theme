@@ -1,0 +1,10 @@
+
+@import "../px-colors-design/settings.colors";
+
+* {
+  --px-app-nav-background-color:    $gray-darkest;
+  --px-app-nav-link-text-color:     $white;
+  --px-app-nav-link-selected-color: $blue;
+  --px-app-nav-link-hover-color:    $gray-dark;
+  --px-app-nav-link-active-color:   $blue-light;
+}

@@ -1,0 +1,27 @@
+{
+  "name": "px-theme",
+  "version": "0.0.1",
+  "main": [
+    "px-theme.html"
+  ],
+  "ignore": [
+    ".*",
+    "npm-debug.log",
+    "Gruntfile.js",
+    "sass",
+    "bower_components",
+    "node_modules",
+    "test"
+  ],
+  "dependencies": {
+    "polymer": "~v0.8.0",
+    "webcomponentsjs": "webcomponents/webcomponentsjs#~v0.6.1"
+  },
+  "devDependencies": {
+    "iron-doc-viewer": "PolymerElements/iron-doc-viewer#~v0.8.3",
+    "px-colors-design": "git://github.sw.ge.com/pxc/px-colors-design.git#master"
+  },
+  "resolutions": {
+    "polymer": "v0.8.0-rc.4"
+  }
+}
