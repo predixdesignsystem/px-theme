@@ -6,9 +6,7 @@ module.exports = function (grunt) {
     grunt.initConfig({
 
         clean: {
-            css: ['css'],
-            bower: ['bower_components'],
-            reports: ['reports']
+            css: ['css']
         },
 
         sass: {
@@ -64,13 +62,19 @@ module.exports = function (grunt) {
             }
         },
 
-        webdriver: {
-            options: {
-                specFiles: ['test/*spec.js']
-            },
-            local: {
-                webdrivers: ['chrome']
-            }
+        insert: {
+          insertcss:{
+            src: "css/px-theme.css",
+            dest: "px-theme.html",
+            match: "!!css goes here!!"
+          }
+        },
+
+        copy: {
+          copyhtmltemplate: {
+            src: "_px-theme.html",
+            dest: "px-theme.html"
+          }
         }
     });
 
@@ -80,31 +84,15 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-jshint');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-dep-serve');
-    grunt.loadNpmTasks('webdriver-support');
+    grunt.loadNpmTasks('grunt-insert');    
+    grunt.loadNpmTasks('grunt-contrib-copy');
 
     // Default task.
     grunt.registerTask('default', 'Basic build', [
-        'sass'
-    ]);
-
-    // First run task.
-    grunt.registerTask('firstrun', 'Basic first run', function() {
-        grunt.config.set('depserveOpenUrl', '/index.html');
-        grunt.task.run('default');
-        grunt.task.run('depserve');
-    });
-
-    // Default task.
-    grunt.registerTask('test', 'Test', [
-        'jshint',
-        'webdriver'
-    ]);
-
-    grunt.registerTask('release', 'Release', [
-        'clean',
-        'shell:bower',
-        'default',
-        'test'
+      'clean',
+      'sass',
+      'copy',
+      'insert'
     ]);
 
 };
