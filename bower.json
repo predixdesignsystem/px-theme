@@ -22,6 +22,6 @@
     "px-colors-design": "git://github.sw.ge.com/pxc/px-colors-design.git#master"
   },
   "resolutions": {
-    "polymer": "v0.8.0-rc.4"
+    "polymer": "v0.8.0-rc.7"
   }
 }
