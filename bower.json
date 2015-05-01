@@ -19,7 +19,7 @@
   },
   "devDependencies": {
     "iron-doc-viewer": "PolymerElements/iron-doc-viewer#~v0.8.3",
-    "px-colors-design": "git://github.sw.ge.com/pxc/px-colors-design.git#master"
+    "px-colors-design": "git://github.sw.ge.com/pxc/px-colors-design.git#~0.1.0"
   },
   "resolutions": {
     "polymer": "v0.8.0-rc.7"
