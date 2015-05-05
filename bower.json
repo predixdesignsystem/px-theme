@@ -19,7 +19,15 @@
   },
   "devDependencies": {
     "iron-doc-viewer": "PolymerElements/iron-doc-viewer#~v0.8.3",
-    "px-colors-design": "git://github.sw.ge.com/pxc/px-colors-design.git#~0.1.0"
+    "px-colors-design": "git://github.sw.ge.com/pxc/px-colors-design.git#~0.1.0",
+    "px-starter-kit-design": "git://github.sw.ge.com/PXC/px-starter-kit-design.git#~0.1.1",
+    "px-defaults-design": "git://github.sw.ge.com/PXd/px-defaults-design.git#~0.1.1",
+    "px-meta-lists-design": "git://github.sw.ge.com/PXd/px-meta-lists-design.git#~0.1.1",
+    "px-code-design": "git://github.sw.ge.com/PXd/px-code-design.git#~0.1.0",
+    "px-headings-design": "git://github.sw.ge.com/PXd/px-headings-design.git#~0.1.1",
+    "px-iconography-design": "git://github.sw.ge.com/PXd/px-iconography-design.git#~0.1.1",
+    "px-layout-design": "git://github.sw.ge.com/PXC/px-layout-design.git#~0.1.1",
+    "px-typography-design": "git://github.sw.ge.com/PXd/px-typography-design.git#~0.1.1"
   },
   "resolutions": {
     "polymer": "v0.8.0-rc.7"
