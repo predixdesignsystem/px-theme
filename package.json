@@ -18,10 +18,13 @@
     "grunt-autoprefixer": "^2.0.0",
     "grunt-contrib-copy": "^0.7.0",
     "grunt-contrib-clean": "~v0.6.0",
+    "grunt-contrib-copy": "^0.8.0",
     "grunt-contrib-jshint": "~v0.10.0",
     "grunt-contrib-watch": "~v0.6.1",
     "grunt-dep-serve": "git+https://github.com/GeneralElectric/grunt-dep-serve.git#master",
-    "webdriver-support": "git+https://github.sw.ge.com/DT/webdriver-support.git#master",
+    "grunt-insert": "^0.1.0",
+    "grunt-sass": "~v0.18.1",
+    "grunt-shell": "~v1.1.1",
     "grunt-insert": "^0.1.0"
   }
 }
