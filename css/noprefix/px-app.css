@@ -944,12 +944,130 @@ html {
 /**
  * Base typographic styles for Predix Experience
  */
+/*!
+ * inuitcss, by @csswizardry
+ *
+ * github.com/inuitcss | inuitcss.com
+ */
 /*------------------------------------*\
     #PX-FUNCTIONS-DESIGN
 \*------------------------------------*/
 /**
  * Sass functions for Predix Experience
  */
+/*------------------------------------*\
+    #PX-FUNCTIONS-DESIGN
+\*------------------------------------*/
+/**
+ * Sass functions for Predix Experience
+ */
+/*------------------------------------*\
+    #PX-MIXINS-DESIGN
+\*------------------------------------*/
+/**
+ * Sass mixins for Predix Experience
+ */
+/*!
+ * inuitcss, by @csswizardry
+ *
+ * github.com/inuitcss | inuitcss.com
+ */
+/*------------------------------------*\
+    #PX-FUNCTIONS-DESIGN
+\*------------------------------------*/
+/**
+ * Sass functions for Predix Experience
+ */
+@font-face {
+  font-family: 'GE Inspira';
+  font-weight: normal;
+  font-style: normal;
+  src: url('../type/GEInspMd.eot');
+  src: url('../type/GEInspMd.eot?#iefix') format('embedded-opentype'), url('../type/GEInspMd.woff') format('woff'), url('../type/GEInspMd.ttf') format('truetype'), url('../type/GEInspMd.svg#GE Inspira') format('svg'); }
+
+@font-face {
+  font-family: 'GE Inspira';
+  font-weight: normal;
+  font-style: italic;
+  src: url('../type/GEInspMdIt.eot');
+  src: url('../type/GEInspMdIt.eot?#iefix') format('embedded-opentype'), url('../type/GEInspMdIt.woff') format('woff'), url('../type/GEInspMdIt.ttf') format('truetype'), url('../type/GEInspMdIt.svg#GE Inspira') format('svg'); }
+
+@font-face {
+  font-family: 'GE Inspira';
+  font-weight: bold;
+  font-style: normal;
+  src: url('../type/GEInspBd.eot');
+  src: url('../type/GEInspBd.eot?#iefix') format('embedded-opentype'), url('../type/GEInspBd.woff') format('woff'), url('../type/GEInspBd.ttf') format('truetype'), url('../type/GEInspBd.svg#GE Inspira') format('svg'); }
+
+@font-face {
+  font-family: 'GE Inspira';
+  font-weight: bold;
+  font-style: italic;
+  src: url('../type/GEInspBI.eot');
+  src: url('../type/GEInspBI.eot?#iefix') format('embedded-opentype'), url('../type/GEInspBI.woff') format('woff'), url('../type/GEInspBI.ttf') format('truetype'), url('../type/GEInspBI.svg#GE Inspira') format('svg'); }
+
+@font-face {
+  font-family: 'GE Inspira Sans';
+  font-weight: normal;
+  font-style: normal;
+  src: url('../type/GEInspiraSans-Regular-v01.eot');
+  src: url('../type/GEInspiraSans-Regular-v01.eot?#iefix') format('embedded-opentype'), url('../type/GEInspiraSans-Regular-v01.woff') format('woff'), url('../type/GEInspiraSans-Regular-v01.ttf') format('truetype'), url('../type/GEInspiraSans-Regular-v01.svg#GE Inspira Sans') format('svg'); }
+
+@font-face {
+  font-family: 'GE Inspira Sans';
+  font-weight: normal;
+  font-style: italic;
+  src: url('../type/GEInspiraSans-Italic-v01.eot');
+  src: url('../type/GEInspiraSans-Italic-v01.eot?#iefix') format('embedded-opentype'), url('../type/GEInspiraSans-Italic-v01.woff') format('woff'), url('../type/GEInspiraSans-Italic-v01.ttf') format('truetype'), url('../type/GEInspiraSans-Italic-v01.svg#GE Inspira Sans') format('svg'); }
+
+@font-face {
+  font-family: 'GE Inspira Sans';
+  font-weight: bold;
+  font-style: normal;
+  src: url('../type/GEInspiraSans-Bold-v01.eot');
+  src: url('../type/GEInspiraSans-Bold-v01.eot?#iefix') format('embedded-opentype'), url('../type/GEInspiraSans-Bold-v01.woff') format('woff'), url('../type/GEInspiraSans-Bold-v01.ttf') format('truetype'), url('../type/GEInspiraSans-Bold-v01.svg#GE Inspira Sans') format('svg'); }
+
+@font-face {
+  font-family: 'GE Inspira Sans';
+  font-weight: bold;
+  font-style: italic;
+  src: url('../type/GEInspiraSans-BoldItalic-v01.eot');
+  src: url('../type/GEInspiraSans-BoldItalic-v01.eot?#iefix') format('embedded-opentype'), url('../type/GEInspiraSans-BoldItalic-v01.woff') format('woff'), url('../type/GEInspiraSans-BoldItalic-v01.ttf') format('truetype'), url('../type/GEInspiraSans-BoldItalic-v01.svg#GE Inspira Sans') format('svg'); }
+
+@font-face {
+  font-family: 'GE Inspira Serif';
+  font-weight: normal;
+  font-style: normal;
+  src: url('../type/GEInspiraSerif-Regular-v01.eot');
+  src: url('../type/GEInspiraSerif-Regular-v01.eot?#iefix') format('embedded-opentype'), url('../type/GEInspiraSerif-Regular-v01.woff') format('woff'), url('../type/GEInspiraSerif-Regular-v01.ttf') format('truetype'), url('../type/GEInspiraSerif-Regular-v01.svg#GE Inspira Serif') format('svg'); }
+
+@font-face {
+  font-family: 'GE Inspira Serif';
+  font-weight: normal;
+  font-style: italic;
+  src: url('../type/GEInspiraSerif-Italic-v01.eot');
+  src: url('../type/GEInspiraSerif-Italic-v01.eot?#iefix') format('embedded-opentype'), url('../type/GEInspiraSerif-Italic-v01.woff') format('woff'), url('../type/GEInspiraSerif-Italic-v01.ttf') format('truetype'), url('../type/GEInspiraSerif-Italic-v01.svg#GE Inspira Serif') format('svg'); }
+
+@font-face {
+  font-family: 'GE Inspira Serif';
+  font-weight: bold;
+  font-style: normal;
+  src: url('../type/GEInspiraSerif-Bold-v01.eot');
+  src: url('../type/GEInspiraSerif-Bold-v01.eot?#iefix') format('embedded-opentype'), url('../type/GEInspiraSerif-Bold-v01.woff') format('woff'), url('../type/GEInspiraSerif-Bold-v01.ttf') format('truetype'), url('../type/GEInspiraSerif-Bold-v01.svg#GE Inspira Serif') format('svg'); }
+
+@font-face {
+  font-family: 'GE Inspira Serif';
+  font-weight: bold;
+  font-style: italic;
+  src: url('../type/GEInspiraSerif-BoldItalic-v01.eot');
+  src: url('../type/GEInspiraSerif-BoldItalic-v01.eot?#iefix') format('embedded-opentype'), url('../type/GEInspiraSerif-BoldItalic-v01.woff') format('woff'), url('../type/GEInspiraSerif-BoldItalic-v01.ttf') format('truetype'), url('../type/GEInspiraSerif-BoldItalic-v01.svg#GE Inspira Serif') format('svg'); }
+
+html {
+  font-family: "GE Inspira Sans", sans-serif; }
+
+:host {
+  font-family: "GE Inspira Sans", sans-serif; }
+
 /**
    * Font weights
    */
@@ -961,6 +1079,10 @@ html {
 
 .weight--semibold {
   font-weight: 600 !important; }
+
+small {
+  font-size: 0.8rem;
+  line-height: 1.6666666667; }
 
 /*------------------------------------*\
     #PX-CODE-DESIGN
