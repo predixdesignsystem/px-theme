@@ -1,7 +1,10 @@
+//
+// component theme variables
+//
 
 @import "../px-colors-design/settings.colors";
 
-* {
+*{
   --px-app-nav-background-color:    $gray-darkest;
   --px-app-nav-link-text-color:     $white;
   --px-app-nav-link-selected-color: $blue;
@@ -16,3 +19,19 @@
   --px-tables-table-font-family: "GE Inspira Sans";
 
 }
+
+//
+// page theme variables
+//
+
+$px-page-html-background-color: $gray-darker;
+$px-page-link-color: $white;
+$px-page-spine-border-color: $gray-dark;
+$px-page-spine-text-color: $white;
+$px-page-bold-text-color: $gray-light;
+$px-page-card-border-color: $gray-light;
+$px-page-card-background-color: $white;
+$px-page-card-text-color: $true-black;
+$px-page-card-paragraph-text-color: $gray;
+$px-page-banner-text-color: $white;
+$px-page-main-content-area-background-color: $white;

@@ -5,6 +5,8 @@ $imported-once-files        : ();
 @import "../inuit-responsive-settings/settings.responsive";
 @import "../px-colors-design/settings.colors";
 
+@import "px-theme";
+
 // Tools
 @import "../px-mixins-design/tools.mixins";
 @import "../inuit-responsive-tools/tools.responsive";
@@ -38,7 +40,7 @@ $inuit-enable-btn--bare     : true;
 
 // App
 html {
-  background-color: $gray-darker;
+  background-color: $px-page-html-background-color;
 }
 
 .layout__item.navbar {
@@ -48,7 +50,7 @@ html {
 
 .auth {
   &, a {
-    color: $white;
+    color: $px-page-link-color;
   }
   button {
     @extend %btn--bare;
@@ -73,7 +75,7 @@ html {
     @include inuit-font-size(24px);
     margin: 0;
     font-weight: normal;
-    color: $white;
+    color: $px-page-banner-text-color;
     svg {
       margin-bottom: -.1em;
     }
@@ -82,7 +84,7 @@ html {
 
 main {
   border: $inuit-base-spacing-unit--tiny solid $gray;
-  background-color: $white;
+  background-color: $px-page-main-content-area-background-color;
 }
 
 .spine, .cards {
@@ -95,9 +97,9 @@ main {
 }
 
 .spine {
-  border-top: 2px solid $gray-dark;
+  border-top: 2px solid $px-page-spine-border-color;
   background : linear-gradient(180deg, rgb(110, 112, 114) 0%, rgb(139, 141, 143) 100%);
-  color: $white;
+  color: $px-page-spine-text-color;
   article {
     padding: $inuit-base-spacing-unit--small $inuit-base-spacing-unit--small $inuit-base-spacing-unit--large;
   }
@@ -111,13 +113,13 @@ main {
     margin: 0 0 0 -.08em;
   }
   p b {
-    color: $gray-light;
+    color: $px-page-bold-text-color;
   }
 }
 
 .spine--primary, .spine--secondary {
   .layout__item {
-    @include border-right-left(right, $gray-dark);
+    @include border-right-left(right, $px-page-spine-border-color);
   }
 }
 
@@ -131,7 +133,7 @@ main {
 }
 
 .spine--secondary {
-  border-top: 1px solid $gray-dark;
+  border-top: 1px solid $px-page-spine-border-color;
   p {
     @include inuit-font-size(45px,false);
     padding-top: $inuit-base-spacing-unit--tiny;
@@ -143,14 +145,14 @@ main {
 }
 
 .cards {
-  background-color: $white;
-  color: $true-black;
+  background-color: $px-page-card-background-color;
+  color: $px-page-card-text-color;
   h2 {
-    border-bottom: 2px solid $gray-light;
+    border-bottom: 2px solid $px-page-card-border-color;
   }
   .layout__item {
-    @include border-right-left(right, $gray-light);
-    border-bottom: 1px solid $gray-light;
+    @include border-right-left(right, $px-page-card-border-color);
+    border-bottom: 1px solid $px-page-card-border-color;
   }
   article {
     padding: $inuit-base-spacing-unit--large $inuit-base-spacing-unit--large $inuit-base-spacing-unit--huge;
@@ -163,17 +165,17 @@ main {
     padding-top: $inuit-base-spacing-unit;
     b {
       font-size: .5em;
-      color: $gray;
+      color: $px-page-card-paragraph-text-color;
     }
   }
 }
 
 [role=contentinfo] {
   @include inuit-font-size(12px);
-  color: $white;
+  color: $px-page-link-color;
   a {
     text-decoration: none;
-    color: $white;
+    color: $px-page-link-color;
     &:hover {
       text-decoration: underline;
     }
