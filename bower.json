@@ -1,6 +1,6 @@
 {
   "name": "px-theme",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "main": [
     "px-theme.html"
   ],
@@ -26,9 +26,6 @@
     "px-headings-design": "git://github.build.ge.com/PXd/px-headings-design.git#~0.1.1",
     "px-iconography-design": "git://github.build.ge.com/PXd/px-iconography-design.git#~0.1.1",
     "px-layout-design": "git://github.build.ge.com/PXC/px-layout-design.git#~0.1.1",
-    "px-typography-design": "git://github.build.ge.com/PXd/px-typography-design.git#~0.1.1"
-  },
-  "resolutions": {
-    "polymer": "v0.9.0"
+    "px-typography-design": "git://github.build.ge.com/PXd/px-typography-design.git#~0.1.2"
   }
 }
