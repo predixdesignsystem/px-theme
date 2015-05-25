@@ -1,6 +1,6 @@
 {
   "name": "px-theme",
-  "version": "0.1.8",
+  "version": "0.1.9",
   "main": [
     "px-theme.html"
   ],
@@ -14,7 +14,8 @@
     "test"
   ],
   "dependencies": {
-    "polymer": "~v0.9.0"
+    "polymer": "~v0.9.0",
+    "px-typography-design": "git://github.build.ge.com/PXd/px-typography-design.git#~0.1.3"
   },
   "devDependencies": {
     "iron-doc-viewer": "PolymerElements/iron-doc-viewer#~v0.9.1",
@@ -25,7 +26,6 @@
     "px-code-design": "git://github.build.ge.com/PXd/px-code-design.git#~0.1.0",
     "px-headings-design": "git://github.build.ge.com/PXd/px-headings-design.git#~0.1.1",
     "px-iconography-design": "git://github.build.ge.com/PXd/px-iconography-design.git#~0.1.1",
-    "px-layout-design": "git://github.build.ge.com/PXC/px-layout-design.git#~0.1.1",
-    "px-typography-design": "git://github.build.ge.com/PXd/px-typography-design.git#~0.1.3"
+    "px-layout-design": "git://github.build.ge.com/PXC/px-layout-design.git#~0.1.1"
   }
 }
