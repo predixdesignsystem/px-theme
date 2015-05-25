@@ -1,6 +1,6 @@
 {
   "name": "px-theme",
-  "version": "0.1.9",
+  "version": "0.1.10",
   "main": [
     "px-theme.html"
   ],
@@ -15,7 +15,7 @@
   ],
   "dependencies": {
     "polymer": "~v0.9.0",
-    "px-typography-design": "git://github.build.ge.com/PXd/px-typography-design.git#~0.1.3"
+    "px-typography-design": "git://github.build.ge.com/PXd/px-typography-design.git#~0.1.4"
   },
   "devDependencies": {
     "iron-doc-viewer": "PolymerElements/iron-doc-viewer#~v0.9.1",
