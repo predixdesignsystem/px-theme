@@ -4,7 +4,7 @@
 
 @import "../px-colors-design/settings.colors";
 
-*{
+:root{
   --px-app-nav-background-color:    $gray10;
   --px-app-nav-link-text-color:     $white;
   --px-app-nav-link-selected-color: $primary-blue;
