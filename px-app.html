@@ -1,17 +1,6 @@
 <style is="custom-style">
 
   @charset "UTF-8";
-/*!
- * inuitcss, by @csswizardry
- *
- * github.com/inuitcss | inuitcss.com
- */
-/*------------------------------------*\
-    #PX-FUNCTIONS-DESIGN
-\*------------------------------------*/
-/**
- * Sass functions for Predix Experience
- */
 /*------------------------------------*\
     #PX-COLORS-DESIGN
 \*------------------------------------*/
@@ -102,41 +91,7 @@
   --px-tables-td-color: black;
   --px-tables-table-font-family: "GE Inspira Sans"; }
 
-/*------------------------------------*\
-    #PX-MIXINS-DESIGN
-\*------------------------------------*/
-/**
- * Sass mixins for Predix Experience
- */
-/*!
- * inuitcss, by @csswizardry
- *
- * github.com/inuitcss | inuitcss.com
- */
-/*------------------------------------*\
-    #PX-FUNCTIONS-DESIGN
-\*------------------------------------*/
-/**
- * Sass functions for Predix Experience
- */
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
-/*!
- * inuitcss, by @csswizardry
- *
- * github.com/inuitcss | inuitcss.com
- */
-/*------------------------------------*\
-    #PX-FUNCTIONS-DESIGN
-\*------------------------------------*/
-/**
- * Sass functions for Predix Experience
- */
-/*------------------------------------*\
-    #PX-FUNCTIONS-DESIGN
-\*------------------------------------*/
-/**
- * Sass functions for Predix Experience
- */
 /**
    *
    * 1. Set the default `font-size` and `line-height` for the entire project,
@@ -155,8 +110,8 @@ html {
   /* [1] */
   line-height: 1.3333333333;
   /* [1] */
-  background-color: #fff;
-  color: #000;
+  background-color: white;
+  color: black;
   overflow-y: scroll;
   /* [2] */
   min-height: 100%;
@@ -351,21 +306,12 @@ table {
 td, th {
   padding: 0; }
 
-/*------------------------------------*\
-    #PX-BOX-SIZING-DESIGN
-\*------------------------------------*/
-/*------------------------------------*\
-    #PX-FUNCTIONS-DESIGN
-\*------------------------------------*/
 /**
- * Sass functions for Predix Experience
+ * Set the global `box-sizing` state to `border-box`.
+ *
+ * css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice
+ * paulirish.com/2012/box-sizing-border-box-ftw
  */
-/**
-   * Set the global `box-sizing` state to `border-box`.
-   *
-   * css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice
-   * paulirish.com/2012/box-sizing-border-box-ftw
-   */
 html {
   box-sizing: border-box; }
 
@@ -376,9 +322,6 @@ html {
 *, *:before, *:after {
   box-sizing: inherit; }
 
-/*------------------------------------*\
-    #PX-HELPERS-DESIGN
-\*------------------------------------*/
 /**
  * A series of helper classes to use arbitrarily. Only use a helper class if an
  * element/component doesn’t already have a class to which you could apply this
@@ -387,12 +330,6 @@ html {
  *
  * A lot of these classes carry `!important` as you will always want them to win
  * out over other selectors.
- */
-/*------------------------------------*\
-    #PX-FUNCTIONS-DESIGN
-\*------------------------------------*/
-/**
- * Sass functions for Predix Experience
  */
 /**
    * Add/remove floats
@@ -435,8 +372,7 @@ html {
    * Mute an object by reducing its opacity.
    */
 .muted {
-  opacity: 0.5 !important;
-  filter: alpha(opacity=50) !important; }
+  opacity: 0.5 !important; }
 
 /**
    * Align items to the right where they imply progression/movement forward, e.g.:
@@ -552,62 +488,16 @@ html {
    * Hide visually and from screen readers, but maintain layout
    */
 .invisible {
-  visibility: hidden; }
+  visibility: hidden !important; }
 
 /*------------------------------------*\
     #PX-META-LISTS-DESIGN
 \*------------------------------------*/
-/*------------------------------------*\
-    #PX-LIST-BARE-DESIGN
-\*------------------------------------*/
-/**
- * The list-bare object simply removes any indents and bullet points from lists.
- */
-/*!
- * inuitcss, by @csswizardry
- *
- * github.com/inuitcss | inuitcss.com
- */
-/*------------------------------------*\
-    #PX-FUNCTIONS-DESIGN
-\*------------------------------------*/
-/**
- * Sass functions for Predix Experience
- */
-/*------------------------------------*\
-    #PX-FUNCTIONS-DESIGN
-\*------------------------------------*/
-/**
- * Sass functions for Predix Experience
- */
 .list-bare, .auth ul {
   margin: 0;
   padding: 0;
   list-style: none; }
 
-/*------------------------------------*\
-    #PX-LIST-INLINE-DESIGN
-\*------------------------------------*/
-/**
- * The list-inline object simply displays a list of items in one line.
- */
-/*!
- * inuitcss, by @csswizardry
- *
- * github.com/inuitcss | inuitcss.com
- */
-/*------------------------------------*\
-    #PX-FUNCTIONS-DESIGN
-\*------------------------------------*/
-/**
- * Sass functions for Predix Experience
- */
-/*------------------------------------*\
-    #PX-FUNCTIONS-DESIGN
-\*------------------------------------*/
-/**
- * Sass functions for Predix Experience
- */
 .list-inline {
   margin: 0;
   padding: 0;
@@ -616,14 +506,11 @@ html {
     display: inline-block; }
 
 /**
-       * Comma delimited list to semantically mark up lists of tags, etc.
+       * Pipe delimited list to semantically mark up lists of tags, etc.
        *
-       * N.B. This component requires that you remove the whitespace between LIs.
-       *      The simplest (and valid) way to achieve this is by omitting the
-       *      closing `</li>` tag.
        */
 .list-inline--delimited > li + li:before {
-  content: ",\00A0"; }
+  content: "\00A0|\00A0"; }
 
 /*------------------------------------*\
     #PX-LIST-UI-DESIGN
@@ -631,23 +518,6 @@ html {
 /**
  * The UI list object creates blocky list items with a keyline separator out of
  * a `ul` or `ol`.
- */
-/*!
- * inuitcss, by @csswizardry
- *
- * github.com/inuitcss | inuitcss.com
- */
-/*------------------------------------*\
-    #PX-FUNCTIONS-DESIGN
-\*------------------------------------*/
-/**
- * Sass functions for Predix Experience
- */
-/*------------------------------------*\
-    #PX-FUNCTIONS-DESIGN
-\*------------------------------------*/
-/**
- * Sass functions for Predix Experience
  */
 .list-ui, .list-ui__item, .list-ui > li {
   border: 0 solid #ccc; }
@@ -696,23 +566,6 @@ html {
 /**
 * Define a default max viewport
 */
-/*!
- * inuitcss, by @csswizardry
- *
- * github.com/inuitcss | inuitcss.com
- */
-/*------------------------------------*\
-    #PX-FUNCTIONS-DESIGN
-\*------------------------------------*/
-/**
- * Sass functions for Predix Experience
- */
-/*------------------------------------*\
-    #PX-FUNCTIONS-DESIGN
-\*------------------------------------*/
-/**
- * Sass functions for Predix Experience
- */
 .viewport {
   width: 98%;
   max-width: 80rem;
@@ -735,12 +588,6 @@ html {
 /**
 * Flexbox for Predix Experience
 */
-/*------------------------------------*\
-    #PX-FUNCTIONS-DESIGN
-\*------------------------------------*/
-/**
- * Sass functions for Predix Experience
- */
 .flex {
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -836,40 +683,6 @@ html {
 \*------------------------------------*/
 /**
  * Base typographic styles for Predix Experience
- */
-/*!
- * inuitcss, by @csswizardry
- *
- * github.com/inuitcss | inuitcss.com
- */
-/*------------------------------------*\
-    #PX-FUNCTIONS-DESIGN
-\*------------------------------------*/
-/**
- * Sass functions for Predix Experience
- */
-/*------------------------------------*\
-    #PX-FUNCTIONS-DESIGN
-\*------------------------------------*/
-/**
- * Sass functions for Predix Experience
- */
-/*------------------------------------*\
-    #PX-MIXINS-DESIGN
-\*------------------------------------*/
-/**
- * Sass mixins for Predix Experience
- */
-/*!
- * inuitcss, by @csswizardry
- *
- * github.com/inuitcss | inuitcss.com
- */
-/*------------------------------------*\
-    #PX-FUNCTIONS-DESIGN
-\*------------------------------------*/
-/**
- * Sass functions for Predix Experience
  */
 @font-face {
   font-family: 'GE Inspira';
@@ -978,78 +791,50 @@ small {
   line-height: 1.6666666667; }
 
 /*------------------------------------*\
-    #PX-CODE-DESIGN
+    #PX-COLORS-DESIGN
 \*------------------------------------*/
 /**
-* Code snippet stylings
-*/
-/*!
- * inuitcss, by @csswizardry
- *
- * github.com/inuitcss | inuitcss.com
+ * Brand Colors
  */
-/*------------------------------------*\
-    #PX-FUNCTIONS-DESIGN
-\*------------------------------------*/
 /**
- * Sass functions for Predix Experience
- */
-/*------------------------------------*\
-    #PX-FUNCTIONS-DESIGN
-\*------------------------------------*/
+     * Primary
+     */
 /**
- * Sass functions for Predix Experience
+     * Light
+     */
+/**
+     * Dark
+     */
+/**
+ * Monochromatic (gray10 is darkest, gray1 is lightest)
  */
+/**
+ * Buttons
+ */
+/**
+ * Selection
+ */
+/**
+ * Alerts
+ */
+/**
+ * Data Visualization
+ */
+/**
+     * Basic
+     */
+/**
+     * Light
+     */
+/**
+     * Dark
+     */
 .code {
-  border: 1px solid #e5e5e5;
+  border: 1px solid #e4e4ea;
   padding: 1rem;
-  border-radius: .25em;
-  background-color: #f7f7f7;
-  color: #2f6f9f; }
-
-/*------------------------------------*\
-    #PX-HEADINGS-DESIGN
-\*------------------------------------*/
-/**
- * Headings 1–6.
- */
-/*!
- * inuitcss, by @csswizardry
- *
- * github.com/inuitcss | inuitcss.com
- */
-/*------------------------------------*\
-    #PX-FUNCTIONS-DESIGN
-\*------------------------------------*/
-/**
- * Sass functions for Predix Experience
- */
-/*------------------------------------*\
-    #PX-FUNCTIONS-DESIGN
-\*------------------------------------*/
-/**
- * Sass functions for Predix Experience
- */
-/*------------------------------------*\
-    #PX-MIXINS-DESIGN
-\*------------------------------------*/
-/**
- * Sass mixins for Predix Experience
- */
-/*!
- * inuitcss, by @csswizardry
- *
- * github.com/inuitcss | inuitcss.com
- */
-/*------------------------------------*\
-    #PX-FUNCTIONS-DESIGN
-\*------------------------------------*/
-/**
- * Sass functions for Predix Experience
- */
-h1, h2, h3, h4, h5, h6 {
-  font-size: 1rem;
-  line-height: 1.3333333333; }
+  border-radius: 3px;
+  background-color: #f7f7fc;
+  color: #2b5ea2; }
 
 .alpha {
   font-size: 5rem;
@@ -1075,12 +860,6 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 0.8rem;
   line-height: 1.6666666667; }
 
-/*------------------------------------*\
-    #PX-ICONOGRAPHY-DESIGN
-\*------------------------------------*/
-/**
- * Base icon styles for Predix Experience
- */
 /*!
  *  Font Awesome 4.3.0 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
@@ -1089,8 +868,8 @@ h1, h2, h3, h4, h5, h6 {
  * -------------------------- */
 @font-face {
   font-family: 'FontAwesome';
-  src: url('../icons/fontawesome-webfont.eot?v=4.3.0');
-  src: url('../icons/fontawesome-webfont.eot?#iefix&v=4.3.0') format('embedded-opentype'), url('../icons/fontawesome-webfont.woff2?v=4.3.0') format('woff2'), url('../icons/fontawesome-webfont.woff?v=4.3.0') format('woff'), url('../icons/fontawesome-webfont.ttf?v=4.3.0') format('truetype'), url('../icons/fontawesome-webfont.svg?v=4.3.0#fontawesomeregular') format('svg');
+  src: url('../font-awesome/fonts/fontawesome-webfont.eot?v=4.3.0');
+  src: url('../font-awesome/fonts/fontawesome-webfont.eot?#iefix&v=4.3.0') format('embedded-opentype'), url('../font-awesome/fonts/fontawesome-webfont.woff2?v=4.3.0') format('woff2'), url('../font-awesome/fonts/fontawesome-webfont.woff?v=4.3.0') format('woff'), url('../font-awesome/fonts/fontawesome-webfont.ttf?v=4.3.0') format('truetype'), url('../font-awesome/fonts/fontawesome-webfont.svg?v=4.3.0#fontawesomeregular') format('svg');
   font-weight: normal;
   font-style: normal; }
 
@@ -2802,23 +2581,6 @@ h1, h2, h3, h4, h5, h6 {
 /*------------------------------------*\
     #PX-LAYOUT-DESIGN
 \*------------------------------------*/
-/*!
- * inuitcss, by @csswizardry
- *
- * github.com/inuitcss | inuitcss.com
- */
-/*------------------------------------*\
-    #PX-FUNCTIONS-DESIGN
-\*------------------------------------*/
-/**
- * Sass functions for Predix Experience
- */
-/*------------------------------------*\
-    #PX-FUNCTIONS-DESIGN
-\*------------------------------------*/
-/**
- * Sass functions for Predix Experience
- */
 /**
  * The Predix Experience layout system uses `box-sizing: border-box;` and
  * `display: flex;` to create an extremely powerful, flexible
@@ -3018,12 +2780,6 @@ main {
 /*------------------------------------*\
     #PX-CLEARFIX-DESIGN
 \*------------------------------------*/
-/*------------------------------------*\
-    #PX-FUNCTIONS-DESIGN
-\*------------------------------------*/
-/**
- * Sass functions for Predix Experience
- */
 /**
    * Micro clearfix, as per: css-101.org/articles/clearfix/latest-new-clearfix-so-far.php
    * Extend the clearfix class with Sass to avoid the `.clearfix` class appearing
@@ -3043,23 +2799,6 @@ main {
  *
  * `.(m|p)(t|r|b|l|h|v)(-|+|0) {}` = margin/padding top/right/bottom/left/horizontal/vertical less/more/none
  */
-/*!
- * inuitcss, by @csswizardry
- *
- * github.com/inuitcss | inuitcss.com
- */
-/*------------------------------------*\
-    #PX-FUNCTIONS-DESIGN
-\*------------------------------------*/
-/**
- * Sass functions for Predix Experience
- */
-/*------------------------------------*\
-    #PX-FUNCTIONS-DESIGN
-\*------------------------------------*/
-/**
- * Sass functions for Predix Experience
- */
 /*------------------------------------*\
     #PX-SPACING-DESIGN
 \*------------------------------------*/
@@ -3068,23 +2807,6 @@ main {
  * level.
  *
  * `.(m|p)(t|r|b|l|h|v)(-|+|0) {}` = margin/padding top/right/bottom/left/horizontal/vertical less/more/none
- */
-/*!
- * inuitcss, by @csswizardry
- *
- * github.com/inuitcss | inuitcss.com
- */
-/*------------------------------------*\
-    #PX-FUNCTIONS-DESIGN
-\*------------------------------------*/
-/**
- * Sass functions for Predix Experience
- */
-/*------------------------------------*\
-    #PX-FUNCTIONS-DESIGN
-\*------------------------------------*/
-/**
- * Sass functions for Predix Experience
  */
 /**
        * Add tiny margins.
@@ -3336,34 +3058,6 @@ main {
 /**
  * Responsive width classes based on your responsive settings.
  */
-/*!
- * inuitcss, by @csswizardry
- *
- * github.com/inuitcss | inuitcss.com
- */
-/*------------------------------------*\
-    #PX-FUNCTIONS-DESIGN
-\*------------------------------------*/
-/**
- * Sass functions for Predix Experience
- */
-/*------------------------------------*\
-    #PX-FUNCTIONS-DESIGN
-\*------------------------------------*/
-/**
- * Sass functions for Predix Experience
- */
-/*!
- * inuitcss, by @csswizardry
- *
- * github.com/inuitcss | inuitcss.com
- */
-/*------------------------------------*\
-    #PX-FUNCTIONS-DESIGN
-\*------------------------------------*/
-/**
- * Sass functions for Predix Experience
- */
 /*------------------------------------*\
     #WIDTHS
 \*------------------------------------*/
@@ -3373,34 +3067,6 @@ main {
  * word format (e.g. `.u-2-of-3`). Use these in your markup:
  *
  * <div class="u-7/12">
- */
-/*!
- * inuitcss, by @csswizardry
- *
- * github.com/inuitcss | inuitcss.com
- */
-/*------------------------------------*\
-    #PX-FUNCTIONS-DESIGN
-\*------------------------------------*/
-/**
- * Sass functions for Predix Experience
- */
-/*------------------------------------*\
-    #PX-FUNCTIONS-DESIGN
-\*------------------------------------*/
-/**
- * Sass functions for Predix Experience
- */
-/*!
- * inuitcss, by @csswizardry
- *
- * github.com/inuitcss | inuitcss.com
- */
-/*------------------------------------*\
-    #PX-FUNCTIONS-DESIGN
-\*------------------------------------*/
-/**
- * Sass functions for Predix Experience
  */
 .u-1\/1 {
   width: 100% !important; }
