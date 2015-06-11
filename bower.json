@@ -15,7 +15,7 @@
   ],
   "dependencies": {
     "polymer": "~v1.0.2",
-    "px-typography-design": "git://github.build.ge.com/PXd/px-typography-design.git#~0.1.4"
+    "px-typography-design": "git://github.build.ge.com/PXd/px-typography-design.git#~0.1.6"
   },
   "devDependencies": {
     "px-colors-design": "git://github.build.ge.com/PXd/px-colors-design.git#~0.2.0",
