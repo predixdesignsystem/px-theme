@@ -2,7 +2,7 @@
 // component theme variables
 //
 
-@import "../px-colors-design/settings.colors";
+@import "px-colors-design/_settings.colors.scss";
 
 :root{
   --px-app-nav-background-color:    $gray10;
