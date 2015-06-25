@@ -2754,9 +2754,10 @@ code {
   text-align: center;
   text-decoration: none;
   text-transform: none;
-  background-color: #e4e4ea;
-  -webkit-appearance: button; }
+  white-space: nowrap;
+  background-color: #e4e4ea; }
   .btn,
+  .btn:link,
   .btn:visited,
   .btn:hover,
   .btn:focus,
@@ -2771,6 +2772,9 @@ code {
     border-color: #7c7c84;
     box-shadow: none;
     background-color: #9999a3; }
+
+button.btn {
+  -webkit-appearance: button; }
 
 /**
 * Establish default space between adjacent buttons
@@ -2788,11 +2792,13 @@ code {
   padding: 0;
   line-height: inherit; }
   .btn--bare,
+  .btn--bare:link,
   .btn--bare:visited,
   .btn--bare:hover,
   .btn--bare:active,
   .btn--bare:focus,
   .auth button,
+  .auth button:link,
   .auth button:visited,
   .auth button:hover,
   .auth button:active,
