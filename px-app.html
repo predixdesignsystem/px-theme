@@ -176,9 +176,10 @@ ul, ol, dd {
 /* Embedded content
    ========================================================================== */
 /**
- * Remove border when inside `a` element in IE 8/9/10.
+ * Remove border when inside `a` element in IE 8/9/10. Make images shrink from their largest size.
  */
 img {
+  max-width: 100%;
   border: 0; }
 
 /**
@@ -2583,8 +2584,7 @@ code {
 
 /*------------------------------------*    #PX-META-LISTS-DESIGN
 \*------------------------------------*/
-.list-bare,
-.auth ul {
+.list-bare {
   margin: 0;
   padding: 0;
   list-style: none; }
@@ -2785,8 +2785,7 @@ button.btn {
 /**
    * Buttons with no styles (good a11y practice to use <button> for actions rather than <a>).
    */
-.btn--bare,
-.auth button {
+.btn--bare {
   border: 0;
   border-radius: 0;
   padding: 0;
@@ -2796,13 +2795,7 @@ button.btn {
   .btn--bare:visited,
   .btn--bare:hover,
   .btn--bare:active,
-  .btn--bare:focus,
-  .auth button,
-  .auth button:link,
-  .auth button:visited,
-  .auth button:hover,
-  .auth button:active,
-  .auth button:focus {
+  .btn--bare:focus {
     box-shadow: none;
     background: none;
     color: inherit; }
@@ -2815,19 +2808,6 @@ html {
       -ms-flex: none;
           flex: none;
   min-height: calc(100vh - 8rem); }
-
-.auth, .auth a {
-  color: white; }
-
-.navbar--collapsed .auth {
-  position: absolute !important;
-  overflow: hidden !important;
-  width: 1px !important;
-  height: 1px !important;
-  margin: -1px !important;
-  border: 0 !important;
-  padding: 0 !important;
-  clip: rect(0 0 0 0) !important; }
 
 [role=banner], [role=contentinfo] {
   height: 4rem; }
@@ -2843,79 +2823,6 @@ html {
 
 main {
   background-color: #8b8d8f; }
-
-.spine h3, .cards h3 {
-  line-height: 1; }
-
-.spine p b, .cards p b {
-  font-weight: normal; }
-
-.spine {
-  border-top: 2px solid #525156;
-  background: linear-gradient(180deg, #6e7072 0%, #8b8d8f 100%);
-  color: white; }
-  .spine article {
-    padding: 0.6666666667rem 0.6666666667rem 1.3333333333rem; }
-  .spine h3 {
-    margin-top: 0;
-    margin-bottom: 1rem;
-    font-weight: normal;
-    text-transform: uppercase; }
-  .spine p {
-    margin: 0 0 0 -0.08em; }
-  .spine p b {
-    color: #e4e4ea; }
-
-.spine--primary .layout__item, .spine--secondary .layout__item {
-  border-right: 1px solid #525156; }
-  .spine--primary .layout__item:last-child, .spine--secondary .layout__item:last-child {
-    border-right-width: 0; }
-  [dir=rtl] .spine--primary .layout__item:first-child, [dir=rtl] .spine--secondary .layout__item:first-child {
-    border-right-width: 0; }
-  [dir=rtl] .spine--primary .layout__item:last-child, [dir=rtl] .spine--secondary .layout__item:last-child {
-    border-right-width: 1px; }
-
-.spine--primary p {
-  font-size: 5rem;
-  padding-top: 0.6666666667rem;
-  line-height: .55; }
-  .spine--primary p b {
-    font-size: .5em; }
-
-.spine--secondary {
-  border-top: 1px solid #525156; }
-  .spine--secondary p {
-    font-size: 3rem;
-    padding-top: 0.3333333333rem;
-    line-height: .6; }
-    .spine--secondary p b {
-      font-size: .6666em; }
-
-.cards {
-  background-color: white;
-  color: black; }
-  .cards h2 {
-    border-bottom: 2px solid #e4e4ea; }
-  .cards .layout__item {
-    border-right: 1px solid #e4e4ea;
-    border-bottom: 1px solid #e4e4ea; }
-    .cards .layout__item:last-child {
-      border-right-width: 0; }
-    [dir=rtl] .cards .layout__item:first-child {
-      border-right-width: 0; }
-    [dir=rtl] .cards .layout__item:last-child {
-      border-right-width: 1px; }
-  .cards article {
-    padding: 1.3333333333rem 1.3333333333rem 2rem; }
-  .cards h3, .cards p {
-    margin: 0; }
-  .cards p {
-    font-size: 4rem;
-    line-height: 0.6;
-    padding-top: 1rem; }
-    .cards p b {
-      font-size: .5em;
-      color: #b1b1bc; }
 
 [role=contentinfo] {
   font-size: 0.8rem;
@@ -3016,6 +2923,32 @@ main {
 .u-mv\00002b {
   margin-top: 1.3333333333rem !important;
   margin-bottom: 1.3333333333rem !important; }
+
+/**
+     * Add huge margins.
+     */
+.u-m\00002b\00002b {
+  margin: 2rem !important; }
+
+.u-mt\00002b\00002b {
+  margin-top: 2rem !important; }
+
+.u-mr\00002b\00002b {
+  margin-right: 2rem !important; }
+
+.u-mb\00002b\00002b {
+  margin-bottom: 2rem !important; }
+
+.u-ml\00002b\00002b {
+  margin-left: 2rem !important; }
+
+.u-mh\00002b\00002b {
+  margin-right: 2rem !important;
+  margin-left: 2rem !important; }
+
+.u-mv\00002b\00002b {
+  margin-top: 2rem !important;
+  margin-bottom: 2rem !important; }
 
 /**
      * Remove margins.
@@ -3167,6 +3100,32 @@ main {
   padding-bottom: 0.3333333333rem !important; }
 
 /**
+     * Add small paddings.
+     */
+.u-p- {
+  padding: 0.6666666667rem !important; }
+
+.u-pt- {
+  padding-top: 0.6666666667rem !important; }
+
+.u-pr- {
+  padding-right: 0.6666666667rem !important; }
+
+.u-pb- {
+  padding-bottom: 0.6666666667rem !important; }
+
+.u-pl- {
+  padding-left: 0.6666666667rem !important; }
+
+.u-ph- {
+  padding-right: 0.6666666667rem !important;
+  padding-left: 0.6666666667rem !important; }
+
+.u-pv- {
+  padding-top: 0.6666666667rem !important;
+  padding-bottom: 0.6666666667rem !important; }
+
+/**
      * Add large paddings.
      */
 .u-p\00002b {
@@ -3191,6 +3150,58 @@ main {
 .u-pv\00002b {
   padding-top: 1.3333333333rem !important;
   padding-bottom: 1.3333333333rem !important; }
+
+/**
+     * Add huge paddings.
+     */
+.u-p\00002b\00002b {
+  padding: 2rem !important; }
+
+.u-pt\00002b\00002b {
+  padding-top: 2rem !important; }
+
+.u-pr\00002b\00002b {
+  padding-right: 2rem !important; }
+
+.u-pb\00002b\00002b {
+  padding-bottom: 2rem !important; }
+
+.u-pl\00002b\00002b {
+  padding-left: 2rem !important; }
+
+.u-ph\00002b\00002b {
+  padding-right: 2rem !important;
+  padding-left: 2rem !important; }
+
+.u-pv\00002b\00002b {
+  padding-top: 2rem !important;
+  padding-bottom: 2rem !important; }
+
+/**
+     * Remove paddings.
+     */
+.u-p0 {
+  padding: 0 !important; }
+
+.u-pt0 {
+  padding-top: 0 !important; }
+
+.u-pr0 {
+  padding-right: 0 !important; }
+
+.u-pb0 {
+  padding-bottom: 0 !important; }
+
+.u-pl0 {
+  padding-left: 0 !important; }
+
+.u-ph0 {
+  padding-right: 0 !important;
+  padding-left: 0 !important; }
+
+.u-pv0 {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important; }
 
 /**
  * A series of width helper classes that you can use to size things like grid

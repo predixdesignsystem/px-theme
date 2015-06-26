@@ -1,7 +1,6 @@
 // Settings
 @import "px-defaults-design/_settings.defaults.scss";
 @import "px-colors-design/_settings.colors.scss";
-
 @import "px-theme.scss";
 
 // Generic
@@ -41,24 +40,6 @@ html {
   min-height: calc(100vh - #{calculateRem(120px)});
 }
 
-.auth {
-  &, a {
-    color: $px-page-link-color;
-  }
-  button {
-    @extend %btn--bare;
-  }
-  ul {
-    @extend %list-bare;
-  }
-}
-
-.navbar--collapsed {
-  .auth {
-    @include accessibility;
-  }
-}
-
 [role=banner], [role=contentinfo] {
   height: calculateRem(60px);
 }
@@ -79,89 +60,6 @@ main {
   background-color: $px-page-main-content-area-background-color;
 }
 
-.spine, .cards {
-  h3 {
-    line-height: 1;
-  }
-  p b {
-    font-weight: normal;
-  }
-}
-
-.spine {
-  border-top: 2px solid $px-page-spine-border-color;
-  background : linear-gradient(180deg, rgb(110, 112, 114) 0%, rgb(139, 141, 143) 100%);
-  color: $px-page-spine-text-color;
-  article {
-    padding: $inuit-base-spacing-unit--small $inuit-base-spacing-unit--small $inuit-base-spacing-unit--large;
-  }
-  h3 {
-    margin-top: 0;
-    margin-bottom: $inuit-base-spacing-unit;
-    font-weight: normal;
-    text-transform: uppercase;
-  }
-  p {
-    margin: 0 0 0 -.08em;
-  }
-  p b {
-    color: $px-page-bold-text-color;
-  }
-}
-
-.spine--primary, .spine--secondary {
-  .layout__item {
-    @include border-right-left(right, $px-page-spine-border-color);
-  }
-}
-
-.spine--primary p {
-  @include inuit-font-size(75px,false);
-  padding-top: $inuit-base-spacing-unit--small;
-  line-height: .55;
-  b {
-    font-size: .5em;
-  }
-}
-
-.spine--secondary {
-  border-top: 1px solid $px-page-spine-border-color;
-  p {
-    @include inuit-font-size(45px,false);
-    padding-top: $inuit-base-spacing-unit--tiny;
-    line-height: .6;
-    b {
-      font-size: .6666em;
-    }
-  }
-}
-
-.cards {
-  background-color: $px-page-card-background-color;
-  color: $px-page-card-text-color;
-  h2 {
-    border-bottom: 2px solid $px-page-card-border-color;
-  }
-  .layout__item {
-    @include border-right-left(right, $px-page-card-border-color);
-    border-bottom: 1px solid $px-page-card-border-color;
-  }
-  article {
-    padding: $inuit-base-spacing-unit--large $inuit-base-spacing-unit--large $inuit-base-spacing-unit--huge;
-  }
-  h3, p {
-    margin: 0;
-  }
-  p {
-    @include inuit-font-size(60px,36px);
-    padding-top: $inuit-base-spacing-unit;
-    b {
-      font-size: .5em;
-      color: $px-page-card-paragraph-text-color;
-    }
-  }
-}
-
 [role=contentinfo] {
   @include inuit-font-size(12px);
   color: $px-page-link-color;
@@ -178,12 +76,16 @@ main {
 $inuit-enable-margins--tiny             : true;
 $inuit-enable-margins--small            : true;
 $inuit-enable-margins--large            : true;
+$inuit-enable-margins--huge             : true;
 $inuit-enable-margins--none             : true;
 $inuit-enable-margins--rtl              : true;
 $inuit-enable-margins--negative-tiny    : true;
 $inuit-enable-paddings                  : true;
 $inuit-enable-paddings--tiny            : true;
+$inuit-enable-paddings--small           : true;
 $inuit-enable-paddings--large           : true;
+$inuit-enable-paddings--huge            : true;
+$inuit-enable-paddings--none            : true;
 
 @import "px-spacing-responsive-design/_trumps.spacing-responsive.scss";
 @import "px-widths-responsive-design/_trumps.widths-responsive.scss";
