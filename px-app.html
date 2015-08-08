@@ -2672,49 +2672,49 @@ code {
   margin: 0;
   margin-left: -1rem;
   padding: 0; }
-
-/**
-     * 1. Space columns apart.
-     * 2. Full-width unless told to behave otherwise.
-     * 3. Required to combine fluid widths and fixed gutters.
-     */
-.layout__item {
-  padding-left: 1rem;
-  /* [1] */
-  -webkit-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  /* [2] */
-  -webkit-flex-basis: 20rem;
-      -ms-flex-preferred-size: 20rem;
-          flex-basis: 20rem; }
-  .layout__item:nth-last-child(-n+4):first-child,
-  .layout__item:nth-last-child(-n+4):first-child ~ .layout__item {
-    -webkit-flex-basis: 30rem;
-        -ms-flex-preferred-size: 30rem;
-            flex-basis: 30rem; }
-    @media screen and (min-width: 80rem) {
-      .layout__item:nth-last-child(-n+4):first-child,
-      .layout__item:nth-last-child(-n+4):first-child ~ .layout__item {
-        -webkit-flex-basis: 0;
-            -ms-flex-preferred-size: 0;
-                flex-basis: 0; } }
-  .layout__item:nth-last-child(-n+3):first-child,
-  .layout__item:nth-last-child(-n+3):first-child ~ .layout__item {
-    -webkit-flex-basis: 40rem;
-        -ms-flex-preferred-size: 40rem;
-            flex-basis: 40rem; }
-    @media screen and (min-width: 80rem) {
-      .layout__item:nth-last-child(-n+3):first-child,
-      .layout__item:nth-last-child(-n+3):first-child ~ .layout__item {
-        -webkit-flex-basis: 0;
-            -ms-flex-preferred-size: 0;
-                flex-basis: 0; } }
-  @media screen and (min-width: 80rem) {
-    .layout__item {
-      -webkit-flex-basis: 0;
-          -ms-flex-preferred-size: 0;
-              flex-basis: 0; } }
+  .layout > {
+    /**
+       * 1. Space columns apart.
+       * 2. Full-width unless told to behave otherwise.
+       * 3. Required to combine fluid widths and fixed gutters.
+       */ }
+    .layout > .layout__item {
+      padding-left: 1rem;
+      /* [1] */
+      -webkit-flex: 1;
+          -ms-flex: 1;
+              flex: 1;
+      /* [2] */
+      -webkit-flex-basis: 20rem;
+          -ms-flex-preferred-size: 20rem;
+              flex-basis: 20rem; }
+      .layout > .layout__item:nth-last-child(-n+4):first-child,
+      .layout > .layout__item:nth-last-child(-n+4):first-child ~ .layout__item {
+        -webkit-flex-basis: 30rem;
+            -ms-flex-preferred-size: 30rem;
+                flex-basis: 30rem; }
+        @media screen and (min-width: 80rem) {
+          .layout > .layout__item:nth-last-child(-n+4):first-child,
+          .layout > .layout__item:nth-last-child(-n+4):first-child ~ .layout__item {
+            -webkit-flex-basis: 0;
+                -ms-flex-preferred-size: 0;
+                    flex-basis: 0; } }
+      .layout > .layout__item:nth-last-child(-n+3):first-child,
+      .layout > .layout__item:nth-last-child(-n+3):first-child ~ .layout__item {
+        -webkit-flex-basis: 40rem;
+            -ms-flex-preferred-size: 40rem;
+                flex-basis: 40rem; }
+        @media screen and (min-width: 80rem) {
+          .layout > .layout__item:nth-last-child(-n+3):first-child,
+          .layout > .layout__item:nth-last-child(-n+3):first-child ~ .layout__item {
+            -webkit-flex-basis: 0;
+                -ms-flex-preferred-size: 0;
+                    flex-basis: 0; } }
+      @media screen and (min-width: 80rem) {
+        .layout > .layout__item {
+          -webkit-flex-basis: 0;
+              -ms-flex-preferred-size: 0;
+                  flex-basis: 0; } }
 
 /**
      * Layouts with small gutters.
@@ -2818,9 +2818,11 @@ html {
   line-height: 1.6666666667;
   margin: 0;
   font-weight: normal;
-  color: white; }
+  color: #7c7c84; }
   [role=banner] h1 svg {
     margin-bottom: -.1em; }
+    [role=banner] h1 svg path {
+      fill: #7c7c84; }
 
 main {
   background-color: #8b8d8f; }
@@ -2828,10 +2830,10 @@ main {
 [role=contentinfo] {
   font-size: 0.8rem;
   line-height: 1.6666666667;
-  color: white; }
+  color: #b1b1bc; }
   [role=contentinfo] a {
     text-decoration: none;
-    color: white; }
+    color: #b1b1bc; }
     [role=contentinfo] a:hover {
       text-decoration: underline; }
 

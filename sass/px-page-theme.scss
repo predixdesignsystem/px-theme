@@ -52,6 +52,9 @@ html {
     color: $px-page-banner-text-color;
     svg {
       margin-bottom: -.1em;
+      path{
+        fill: $px-page-banner-meatball-color;
+      }
     }
   }
 }
