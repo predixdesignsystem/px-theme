@@ -39,19 +39,6 @@
 /**
      * Dark
      */
-:root {
-  --px-app-nav-background-color: #242326;
-  --px-app-nav-link-text-color: white;
-  --px-app-nav-link-selected-color: #086e87;
-  --px-app-nav-link-selected-active-color: #0986a4;
-  --px-app-nav-link-hover-color: #525156;
-  --px-app-nav-link-active-color: #3573c5;
-  --px-tables-th-color: #525156;
-  --px-tables-th-background-color: #f7f7fc;
-  --px-tables-th-text-align: center;
-  --px-tables-td-color: black;
-  --px-tables-table-font-family: "GE Inspira Sans"; }
-
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 /**
  *
@@ -2597,13 +2584,6 @@ code {
   .list-inline > li {
     display: inline-block; }
 
-/**
-     * Pipe delimited list to semantically mark up lists of tags, etc.
-     *
-     */
-.list-inline--delimited > li + li:before {
-  content: " | "; }
-
 .list-ui,
 .list-ui__item,
 .list-ui > li {
@@ -2619,34 +2599,6 @@ code {
 .list-ui > li {
   padding: 1rem;
   border-bottom-width: 1px; }
-
-/**
-   * Tiny list-uis.
-   */
-.list-ui--tiny > .list-ui__item,
-.list-ui.list-ui--tiny > li {
-  padding: 0.3333333333rem; }
-
-/**
-   * Small list-uis.
-   */
-.list-ui--small > .list-ui__item,
-.list-ui.list-ui--small > li {
-  padding: 0.6666666667rem; }
-
-/**
-   * Large list-uis.
-   */
-.list-ui--large > .list-ui__item,
-.list-ui.list-ui--large > li {
-  padding: 1.3333333333rem; }
-
-/**
-   * Huge list-uis.
-   */
-.list-ui--huge > .list-ui__item,
-.list-ui.list-ui--huge > li {
-  padding: 2rem; }
 
 /**
  * The Predix Experience layout system uses `box-sizing: border-box;` and
@@ -2763,7 +2715,7 @@ code {
   .btn:hover,
   .btn:focus,
   .btn:active {
-    color: #3b3b3f; }
+    color: black; }
   .btn:hover,
   .btn:focus {
     border-color: #9999a3;
@@ -2773,6 +2725,9 @@ code {
     border-color: #7c7c84;
     box-shadow: none;
     background-color: #9999a3; }
+  .btn:active,
+  .btn:focus {
+    outline: none; }
 
 button.btn {
   -webkit-appearance: button; }
@@ -2800,6 +2755,20 @@ button.btn {
     box-shadow: none;
     background: none;
     color: inherit; }
+
+:root {
+  --px-app-nav-background-color: #242326;
+  --px-app-nav-link-text-color: white;
+  --px-app-nav-link-selected-color: #086e87;
+  --px-app-nav-link-selected-active-color: #0986a4;
+  --px-app-nav-link-hover-color: #525156;
+  --px-app-nav-link-active-color: #3573c5;
+  --px-font-family: "GE Inspira Sans", sans-serif;
+  --px-tables-th-color: #525156;
+  --px-tables-th-background-color: #f7f7fc;
+  --px-tables-th-text-align: center;
+  --px-tables-td-color: black;
+  --px-tables-table-font-family: "GE Inspira Sans"; }
 
 html {
   background-color: #3b3b3f; }

@@ -18,13 +18,13 @@
     "px-typography-design": "https://github.build.ge.com/PXd/px-typography-design.git#~0.2.5"
   },
   "devDependencies": {
-    "px-buttons-design": "https://github.build.ge.com/PXd/px-buttons-design.git#~0.4.0",
-    "px-code-design": "https://github.build.ge.com/PXd/px-code-design.git#~0.2.0",
-    "px-colors-design": "https://github.build.ge.com/PXd/px-colors-design.git#~0.2.0",
-    "px-headings-design": "https://github.build.ge.com/PXd/px-headings-design.git#~0.2.0",
-    "px-iconography-design": "https://github.build.ge.com/PXd/px-iconography-design.git#~0.2.0",
-    "px-layout-design": "https://github.build.ge.com/PXd/px-layout-design.git#~0.3.0",
-    "px-meta-lists-design": "https://github.build.ge.com/PXd/px-meta-lists-design.git#~0.2.0",
-    "px-starter-kit-design": "https://github.build.ge.com/PXd/px-starter-kit-design.git#~0.4.1"
+    "px-buttons-design": "https://github.build.ge.com/PXd/px-buttons-design.git#~0.4.11",
+    "px-code-design": "https://github.build.ge.com/PXd/px-code-design.git#~0.2.6",
+    "px-colors-design": "https://github.build.ge.com/PXd/px-colors-design.git#~0.2.7",
+    "px-headings-design": "https://github.build.ge.com/PXd/px-headings-design.git#~0.2.8",
+    "px-iconography-design": "https://github.build.ge.com/PXd/px-iconography-design.git#~0.2.4",
+    "px-layout-design": "https://github.build.ge.com/PXd/px-layout-design.git#~0.3.7",
+    "px-meta-lists-design": "https://github.build.ge.com/PXd/px-meta-lists-design.git#~0.3.0",
+    "px-starter-kit-design": "https://github.build.ge.com/PXd/px-starter-kit-design.git#~0.4.5"
   }
 }

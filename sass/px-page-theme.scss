@@ -1,7 +1,6 @@
 // Settings
 @import "px-defaults-design/_settings.defaults.scss";
 @import "px-colors-design/_settings.colors.scss";
-@import "px-theme.scss";
 
 // Generic
 @import "px-normalize-design/_generic.normalize.scss";
@@ -29,6 +28,8 @@ $inuit-enable-layout--full  : true;
 $inuit-enable-btn--bare     : true;
 
 @import "px-buttons-design/_objects.buttons.scss";
+
+@import "px-theme.scss";
 
 // App
 html {
