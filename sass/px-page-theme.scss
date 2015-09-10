@@ -33,12 +33,22 @@ $inuit-enable-btn--bare     : true;
 
 // App
 html {
+  position: relative;
+  min-height: 100%;
   background-color: $px-page-html-background-color;
+}
+
+body {
+  margin-bottom: calculateRem(60px);
+}
+
+.layout--full {
+  position: relative;
+  min-height: calc(100vh - #{calculateRem(120px)});
 }
 
 .layout__item.navbar {
   flex: none;
-  min-height: calc(100vh - #{calculateRem(120px)});
 }
 
 [role=banner], [role=contentinfo] {
@@ -61,11 +71,23 @@ html {
 }
 
 main {
+  margin-left: calculateRem(55px);
   background-color: $px-page-main-content-area-background-color;
+  @include media-query(desk) {
+    margin-left: 0;
+  }
+}
+
+.navbar--collapsed + main {
+  margin-left: 0;
 }
 
 [role=contentinfo] {
   @include inuit-font-size(12px);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
   color: $px-page-link-color;
   a {
     text-decoration: none;

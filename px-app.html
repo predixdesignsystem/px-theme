@@ -2764,13 +2764,21 @@ button.btn {
   --px-tables-table-font-family: "GE Inspira Sans", sans-serif; }
 
 html {
+  position: relative;
+  min-height: 100%;
   background-color: #3b3b3f; }
+
+body {
+  margin-bottom: 4rem; }
+
+.layout--full {
+  position: relative;
+  min-height: calc(100vh - 8rem); }
 
 .layout__item.navbar {
   -webkit-flex: none;
       -ms-flex: none;
-          flex: none;
-  min-height: calc(100vh - 8rem); }
+          flex: none; }
 
 [role=banner], [role=contentinfo] {
   height: 4rem; }
@@ -2787,11 +2795,22 @@ html {
       fill: #7c7c84; }
 
 main {
+  margin-left: 3.6666666667rem;
   background-color: #8b8d8f; }
+  @media screen and (min-width: 68.266666667rem) {
+    main {
+      margin-left: 0; } }
+
+.navbar--collapsed + main {
+  margin-left: 0; }
 
 [role=contentinfo] {
   font-size: 0.8rem;
   line-height: 1.6666666667;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
   color: #b1b1bc; }
   [role=contentinfo] a {
     text-decoration: none;
