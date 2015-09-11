@@ -1,6 +1,6 @@
 {
   "name": "px-theme",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "main": [
     "px-theme.html"
   ],
@@ -15,6 +15,7 @@
   ],
   "dependencies": {
     "polymer": "~v1.0.3",
+    "px-iconography-design": "https://github.build.ge.com/PXd/px-iconography-design.git#~0.2.4",
     "px-typography-design": "https://github.build.ge.com/PXd/px-typography-design.git#~0.2.5"
   },
   "devDependencies": {
@@ -22,8 +23,6 @@
     "px-code-design": "https://github.build.ge.com/PXd/px-code-design.git#~0.2.6",
     "px-colors-design": "https://github.build.ge.com/PXd/px-colors-design.git#~0.2.7",
     "px-headings-design": "https://github.build.ge.com/PXd/px-headings-design.git#~0.2.8",
-    "px-iconography-design": "https://github.build.ge.com/PXd/px-iconography-design.git#~0.2.4",
-    "px-layout-design": "https://github.build.ge.com/PXd/px-layout-design.git#~0.3.7",
     "px-meta-lists-design": "https://github.build.ge.com/PXd/px-meta-lists-design.git#~0.3.0",
     "px-starter-kit-design": "https://github.build.ge.com/PXd/px-starter-kit-design.git#~0.4.5"
   }
