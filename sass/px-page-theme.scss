@@ -1,5 +1,4 @@
 // Settings
-@import "px-defaults-design/_settings.defaults.scss";
 @import "px-colors-design/_settings.colors.scss";
 
 // Generic
@@ -19,12 +18,6 @@
 @import "px-meta-lists-design/_meta.lists.scss";
 
 // Objects
-$inuit-enable-layout--small : true;
-$inuit-enable-layout--flush : true;
-$inuit-enable-layout--full  : true;
-
-@import "px-layout-design/_objects.layout.scss";
-
 $inuit-enable-btn--bare     : true;
 
 @import "px-buttons-design/_objects.buttons.scss";
@@ -40,15 +33,6 @@ html {
 
 body {
   margin-bottom: calculateRem(60px);
-}
-
-.layout--full {
-  position: relative;
-  min-height: calc(100vh - #{calculateRem(120px)});
-}
-
-.layout__item.navbar {
-  flex: none;
 }
 
 [role=banner], [role=contentinfo] {
@@ -70,6 +54,12 @@ body {
   }
 }
 
+.content-wrapper {
+  position: relative;
+  display: flex;
+  min-height: calc(100vh - #{calculateRem(120px)});
+}
+
 main {
   margin-left: calculateRem(55px);
   background-color: $px-page-main-content-area-background-color;
@@ -78,15 +68,10 @@ main {
   }
 }
 
-.navbar--collapsed + main {
-  margin-left: 0;
-}
-
 [role=contentinfo] {
   @include inuit-font-size(12px);
   position: absolute;
   bottom: 0;
-  left: 0;
   width: 100%;
   color: $px-page-link-color;
   a {
@@ -113,5 +98,5 @@ $inuit-enable-paddings--large           : true;
 $inuit-enable-paddings--huge            : true;
 $inuit-enable-paddings--none            : true;
 
-@import "px-spacing-responsive-design/_trumps.spacing-responsive.scss";
-@import "px-widths-responsive-design/_trumps.widths-responsive.scss";
+@import "px-spacing-design/_trumps.spacing.scss";
+@import "px-widths-design/_trumps.widths.scss";
