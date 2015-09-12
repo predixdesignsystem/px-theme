@@ -3,7 +3,6 @@
 //
 
 @import "px-colors-design/_settings.colors.scss";
-@import "px-iconography-design/_base.iconography.scss";
 @import "px-typography-design/_base.typography.scss";
 
 
@@ -22,6 +21,8 @@
   --px-tables-th-text-align: center;
   --px-tables-td-color: $black;
   --px-tables-table-font-family: $predix-font-family;
+  
+  @import "px-iconography-design/_base.iconography.scss";
 
 }
 
