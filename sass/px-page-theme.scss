@@ -66,6 +66,7 @@ main {
   @include media-query(desk) {
     margin-left: 0;
   }
+  flex-grow: 1;
 }
 
 [role=contentinfo] {
