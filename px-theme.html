@@ -216,33 +216,22 @@ sub {
   bottom: -0.25em; }
 
 :root {
-  --px-app-nav-background-color: #242326;
-  --px-app-nav-link-text-color: white;
-  --px-app-nav-link-selected-color: #086e87;
-  --px-app-nav-link-selected-active-color: #0986a4;
-  --px-app-nav-link-hover-color: #525156;
-  --px-app-nav-link-active-color: #3573c5;
-  --px-font-family: "GE Inspira Sans", sans-serif;
-  --px-tables-th-color: #525156;
-  --px-tables-th-background-color: #f7f7fc;
-  --px-tables-th-text-align: center;
-  --px-tables-td-color: black;
-  --px-tables-table-font-family: "GE Inspira Sans", sans-serif;
   /*!
- *  Font Awesome 4.3.0 by @davegandy - http://fontawesome.io - @fontawesome
+ *  Font Awesome 4.4.0 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
  */
   /* FONT PATH
  * -------------------------- */
   /* makes the font 33% larger relative to the icon container */
+  /* Deprecated as of 4.4.0 */
   /* Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
    readers do not read off random characters that represent icons */ }
 
 @font-face {
   :root {
     font-family: 'FontAwesome';
-    src: url("../font-awesome/fonts/fontawesome-webfont.eot?v=4.3.0");
-    src: url("../font-awesome/fonts/fontawesome-webfont.eot?#iefix&v=4.3.0") format("embedded-opentype"), url("../font-awesome/fonts/fontawesome-webfont.woff2?v=4.3.0") format("woff2"), url("../font-awesome/fonts/fontawesome-webfont.woff?v=4.3.0") format("woff"), url("../font-awesome/fonts/fontawesome-webfont.ttf?v=4.3.0") format("truetype"), url("../font-awesome/fonts/fontawesome-webfont.svg?v=4.3.0#fontawesomeregular") format("svg");
+    src: url("../font-awesome/fonts/fontawesome-webfont.eot?v=4.4.0");
+    src: url("../font-awesome/fonts/fontawesome-webfont.eot?#iefix&v=4.4.0") format("embedded-opentype"), url("../font-awesome/fonts/fontawesome-webfont.woff2?v=4.4.0") format("woff2"), url("../font-awesome/fonts/fontawesome-webfont.woff?v=4.4.0") format("woff"), url("../font-awesome/fonts/fontawesome-webfont.ttf?v=4.4.0") format("truetype"), url("../font-awesome/fonts/fontawesome-webfont.svg?v=4.4.0#fontawesomeregular") format("svg");
     font-weight: normal;
     font-style: normal; } }
   :root .fa {
@@ -251,9 +240,7 @@ sub {
     font-size: inherit;
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-transform: translate(0, 0);
-            transform: translate(0, 0); }
+    -moz-osx-font-smoothing: grayscale; }
   :root .fa-lg {
     font-size: 1.3333333333em;
     line-height: 0.75em;
@@ -287,6 +274,14 @@ sub {
     padding: 0.2em 0.25em 0.15em;
     border: solid 0.08em #eee;
     border-radius: .1em; }
+  :root .fa-pull-left {
+    float: left; }
+  :root .fa-pull-right {
+    float: right; }
+  :root .fa.fa-pull-left {
+    margin-right: .3em; }
+  :root .fa.fa-pull-right {
+    margin-left: .3em; }
   :root .pull-right {
     float: right; }
   :root .pull-left {
@@ -673,6 +668,7 @@ sub {
     content: ""; }
   :root .fa-credit-card:before {
     content: ""; }
+  :root .fa-feed:before,
   :root .fa-rss:before {
     content: ""; }
   :root .fa-hdd-o:before {
@@ -1278,6 +1274,8 @@ sub {
     content: ""; }
   :root .fa-git:before {
     content: ""; }
+  :root .fa-y-combinator-square:before,
+  :root .fa-yc-square:before,
   :root .fa-hacker-news:before {
     content: ""; }
   :root .fa-tencent-weibo:before {
@@ -1295,7 +1293,6 @@ sub {
     content: ""; }
   :root .fa-history:before {
     content: ""; }
-  :root .fa-genderless:before,
   :root .fa-circle-thin:before {
     content: ""; }
   :root .fa-header:before {
@@ -1433,6 +1430,7 @@ sub {
     content: ""; }
   :root .fa-mercury:before {
     content: ""; }
+  :root .fa-intersex:before,
   :root .fa-transgender:before {
     content: ""; }
   :root .fa-transgender-alt:before {
@@ -1451,6 +1449,8 @@ sub {
     content: ""; }
   :root .fa-neuter:before {
     content: ""; }
+  :root .fa-genderless:before {
+    content: ""; }
   :root .fa-facebook-official:before {
     content: ""; }
   :root .fa-pinterest-p:before {
@@ -1474,6 +1474,148 @@ sub {
     content: ""; }
   :root .fa-medium:before {
     content: ""; }
+  :root .fa-yc:before,
+  :root .fa-y-combinator:before {
+    content: ""; }
+  :root .fa-optin-monster:before {
+    content: ""; }
+  :root .fa-opencart:before {
+    content: ""; }
+  :root .fa-expeditedssl:before {
+    content: ""; }
+  :root .fa-battery-4:before,
+  :root .fa-battery-full:before {
+    content: ""; }
+  :root .fa-battery-3:before,
+  :root .fa-battery-three-quarters:before {
+    content: ""; }
+  :root .fa-battery-2:before,
+  :root .fa-battery-half:before {
+    content: ""; }
+  :root .fa-battery-1:before,
+  :root .fa-battery-quarter:before {
+    content: ""; }
+  :root .fa-battery-0:before,
+  :root .fa-battery-empty:before {
+    content: ""; }
+  :root .fa-mouse-pointer:before {
+    content: ""; }
+  :root .fa-i-cursor:before {
+    content: ""; }
+  :root .fa-object-group:before {
+    content: ""; }
+  :root .fa-object-ungroup:before {
+    content: ""; }
+  :root .fa-sticky-note:before {
+    content: ""; }
+  :root .fa-sticky-note-o:before {
+    content: ""; }
+  :root .fa-cc-jcb:before {
+    content: ""; }
+  :root .fa-cc-diners-club:before {
+    content: ""; }
+  :root .fa-clone:before {
+    content: ""; }
+  :root .fa-balance-scale:before {
+    content: ""; }
+  :root .fa-hourglass-o:before {
+    content: ""; }
+  :root .fa-hourglass-1:before,
+  :root .fa-hourglass-start:before {
+    content: ""; }
+  :root .fa-hourglass-2:before,
+  :root .fa-hourglass-half:before {
+    content: ""; }
+  :root .fa-hourglass-3:before,
+  :root .fa-hourglass-end:before {
+    content: ""; }
+  :root .fa-hourglass:before {
+    content: ""; }
+  :root .fa-hand-grab-o:before,
+  :root .fa-hand-rock-o:before {
+    content: ""; }
+  :root .fa-hand-stop-o:before,
+  :root .fa-hand-paper-o:before {
+    content: ""; }
+  :root .fa-hand-scissors-o:before {
+    content: ""; }
+  :root .fa-hand-lizard-o:before {
+    content: ""; }
+  :root .fa-hand-spock-o:before {
+    content: ""; }
+  :root .fa-hand-pointer-o:before {
+    content: ""; }
+  :root .fa-hand-peace-o:before {
+    content: ""; }
+  :root .fa-trademark:before {
+    content: ""; }
+  :root .fa-registered:before {
+    content: ""; }
+  :root .fa-creative-commons:before {
+    content: ""; }
+  :root .fa-gg:before {
+    content: ""; }
+  :root .fa-gg-circle:before {
+    content: ""; }
+  :root .fa-tripadvisor:before {
+    content: ""; }
+  :root .fa-odnoklassniki:before {
+    content: ""; }
+  :root .fa-odnoklassniki-square:before {
+    content: ""; }
+  :root .fa-get-pocket:before {
+    content: ""; }
+  :root .fa-wikipedia-w:before {
+    content: ""; }
+  :root .fa-safari:before {
+    content: ""; }
+  :root .fa-chrome:before {
+    content: ""; }
+  :root .fa-firefox:before {
+    content: ""; }
+  :root .fa-opera:before {
+    content: ""; }
+  :root .fa-internet-explorer:before {
+    content: ""; }
+  :root .fa-tv:before,
+  :root .fa-television:before {
+    content: ""; }
+  :root .fa-contao:before {
+    content: ""; }
+  :root .fa-500px:before {
+    content: ""; }
+  :root .fa-amazon:before {
+    content: ""; }
+  :root .fa-calendar-plus-o:before {
+    content: ""; }
+  :root .fa-calendar-minus-o:before {
+    content: ""; }
+  :root .fa-calendar-times-o:before {
+    content: ""; }
+  :root .fa-calendar-check-o:before {
+    content: ""; }
+  :root .fa-industry:before {
+    content: ""; }
+  :root .fa-map-pin:before {
+    content: ""; }
+  :root .fa-map-signs:before {
+    content: ""; }
+  :root .fa-map-o:before {
+    content: ""; }
+  :root .fa-map:before {
+    content: ""; }
+  :root .fa-commenting:before {
+    content: ""; }
+  :root .fa-commenting-o:before {
+    content: ""; }
+  :root .fa-houzz:before {
+    content: ""; }
+  :root .fa-vimeo:before {
+    content: ""; }
+  :root .fa-black-tie:before {
+    content: ""; }
+  :root .fa-fonticons:before {
+    content: ""; }
   :root [dir=rtl] .fa-chevron-left,
   :root [dir=rtl] .fa-chevron-right,
   :root [dir=rtl] .fa-chevron-circle-left,
@@ -1488,6 +1630,27 @@ sub {
   :root [dir=rtl] .fa-arrow-circle-o-right {
     -webkit-transform: scale(-1, 1);
             transform: scale(-1, 1); }
+
+@font-face {
+  font-family: 'FontAwesome';
+  src: url("../font-awesome/fonts/fontawesome-webfont.eot?v=4.4.0");
+  src: url("../font-awesome/fonts/fontawesome-webfont.eot?#iefix&v=4.4.0") format("embedded-opentype"), url("../font-awesome/fonts/fontawesome-webfont.woff2?v=4.4.0") format("woff2"), url("../font-awesome/fonts/fontawesome-webfont.woff?v=4.4.0") format("woff"), url("../font-awesome/fonts/fontawesome-webfont.ttf?v=4.4.0") format("truetype"), url("../font-awesome/fonts/fontawesome-webfont.svg?v=4.4.0#fontawesomeregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+:root {
+  --px-app-nav-background-color: #242326;
+  --px-app-nav-link-text-color: white;
+  --px-app-nav-link-selected-color: #086e87;
+  --px-app-nav-link-selected-active-color: #0986a4;
+  --px-app-nav-link-hover-color: #525156;
+  --px-app-nav-link-active-color: #3573c5;
+  --px-font-family: "GE Inspira Sans", sans-serif;
+  --px-tables-th-color: #525156;
+  --px-tables-th-background-color: #f7f7fc;
+  --px-tables-th-text-align: center;
+  --px-tables-td-color: black;
+  --px-tables-table-font-family: "GE Inspira Sans", sans-serif; }
 
 
 </style>
