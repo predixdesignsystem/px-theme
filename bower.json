@@ -1,6 +1,6 @@
 {
   "name": "px-theme",
-  "version": "0.3.5",
+  "version": "0.3.6",
   "main": [
     "px-theme.html"
   ],
@@ -18,7 +18,7 @@
     "px-iconography-design": "https://github.build.ge.com/PXd/px-iconography-design.git#~0.2.0"
   },
   "devDependencies": {
-    "px-buttons-design": "https://github.build.ge.com/PXd/px-buttons-design.git#~0.4.11",
+    "px-buttons-design": "https://github.com/PredixDev/px-buttons-design.git#~0.4.0",
     "px-code-design": "https://github.build.ge.com/PXd/px-code-design.git#~0.2.6",
     "px-colors-design": "https://github.build.ge.com/PXd/px-colors-design.git#~0.2.7",
     "px-headings-design": "https://github.build.ge.com/PXd/px-headings-design.git#~0.2.8",

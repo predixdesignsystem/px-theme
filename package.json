@@ -2,7 +2,7 @@
   "name": "px-theme",
   "author": "General Electric",
   "description": "A Px component",
-  "version": "0.3.5",
+  "version": "0.3.6",
   "private": true,
   "fwk": "polymer08",
   "extName": null,
