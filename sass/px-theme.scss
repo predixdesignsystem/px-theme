@@ -3,14 +3,15 @@
 //
 
 @import "px-colors-design/_settings.colors.scss";
-@import "px-typography-design/_base.typography.scss";
 
 :root {
   @import "px-iconography-design/_base.iconography.scss";
+  @import "px-typography-design/_base.typography.scss";
 }
 
 $fa-font-path       : "../font-awesome/fonts";
 $fa-version         : "4.4.0" !default;
+$predix-font-family : "GE Inspira Sans", sans-serif !default;
 
 @font-face {
   font-family: 'FontAwesome';
