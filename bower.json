@@ -1,6 +1,6 @@
 {
   "name": "px-theme",
-  "version": "0.3.7",
+  "version": "0.3.8",
   "main": [
     "px-theme.html"
   ],
@@ -19,10 +19,10 @@
   },
   "devDependencies": {
     "px-buttons-design": "https://github.com/PredixDev/px-buttons-design.git#~0.4.0",
-    "px-code-design": "https://github.build.ge.com/PXd/px-code-design.git#~0.2.6",
-    "px-colors-design": "https://github.build.ge.com/PXd/px-colors-design.git#~0.2.7",
-    "px-headings-design": "https://github.build.ge.com/PXd/px-headings-design.git#~0.2.8",
+    "px-code-design": "https://github.build.ge.com/PXd/px-code-design.git#~0.2.0",
+    "px-colors-design": "https://github.build.ge.com/PXd/px-colors-design.git#~0.2.0",
+    "px-headings-design": "https://github.build.ge.com/PXd/px-headings-design.git#~0.2.0",
     "px-meta-lists-design": "https://github.build.ge.com/PXd/px-meta-lists-design.git#~0.3.0",
-    "px-starter-kit-design": "https://github.build.ge.com/PXd/px-starter-kit-design.git#~0.4.5"
+    "px-starter-kit-design": "https://github.com/PredixDev/px-starter-kit-design.git#~0.4.0"
   }
 }
