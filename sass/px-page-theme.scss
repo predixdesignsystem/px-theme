@@ -22,6 +22,12 @@ $inuit-enable-btn--bare     : true;
 
 @import "px-buttons-design/_objects.buttons.scss";
 
+$inuit-enable-layout--small : true;
+$inuit-enable-layout--flush : true;
+$inuit-enable-layout--full  : true;
+
+@import "px-layout-design/_objects.layout.scss";
+
 @import "px-theme.scss";
 
 // App

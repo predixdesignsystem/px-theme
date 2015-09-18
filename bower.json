@@ -1,6 +1,6 @@
 {
   "name": "px-theme",
-  "version": "0.3.9",
+  "version": "0.3.10",
   "main": [
     "px-theme.html"
   ],
@@ -22,6 +22,7 @@
     "px-code-design": "https://github.build.ge.com/PXd/px-code-design.git#~0.2.0",
     "px-colors-design": "https://github.build.ge.com/PXd/px-colors-design.git#~0.2.0",
     "px-headings-design": "https://github.build.ge.com/PXd/px-headings-design.git#~0.2.0",
+    "px-layout-design": "https://github.build.ge.com/PXd/px-layout-design.git#~0.3.0",
     "px-meta-lists-design": "https://github.build.ge.com/PXd/px-meta-lists-design.git#~0.3.0",
     "px-starter-kit-design": "https://github.com/PredixDev/px-starter-kit-design.git#~0.4.0"
   }
