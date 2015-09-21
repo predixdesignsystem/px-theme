@@ -63,10 +63,10 @@ body {
 .content-wrapper {
   position: relative;
   display: flex;
-  min-height: calc(100vh - #{calculateRem(120px)});
 }
 
 main {
+  min-height: calc(100vh - #{calculateRem(120px)});
   margin-left: calculateRem(55px);
   background-color: $px-page-main-content-area-background-color;
   @include media-query(desk) {
