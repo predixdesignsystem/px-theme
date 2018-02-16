@@ -1,3 +1,7 @@
+v2.1.0
+=================
+* Build against latest pre-cirrus px-typography-design (Move typography CDN over to our own location)
+
 v2.0.3
 =================
 * Update colors design dependency
