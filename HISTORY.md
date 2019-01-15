@@ -1,3 +1,7 @@
+v3.6.1
+===============
+* px-app-nav: Changing empty state background color
+
 v3.6.0
 ================
 * Added boxplot colors
